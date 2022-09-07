@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #f3f3f3;
+    background-image: url('./sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.fa-cloud-sun{
+    font-size: 30px;
+}
+
+
+
+#header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav{
+    padding: 20px;
+}
+
+.nav span{
+    color: lightseagreen;
+    
+}
+
+.home{
+    width: 100%;
+}
+.home h1{
+    margin: 20px 20px 0 20px;
+    font-size: 50px;
+}
+
+.home h4{
+    margin: 20px 20px 0 20px;
+}
+#header .overview{
+    width: 70%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 1; 
+    overflow-x: hidden;
+    padding:0;
+    color: #fff;
+}
+
+.overview h2{
+    padding: 0px;
+    margin:0;
+    display: inline;
+}
+
+.time{
+    padding-left: 20px;
+    width: 70%;
+}
+.time h4{
+    padding: 0px 0 0 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    /* margin-top: 0; */
+}
+.weather_overview{
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    padding: 40px;
+    display: flex;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+.weather_overview h1{
+    /* font-size: 90px; */
+    margin: 0;
+}
+#message-1{
+    font-size: 40px;
+}
+.weather_overview .time h2{
+    margin: 20px 0 0 30px;
+    font-size: 28px;
+    text-align: left;
+}
+
+/* .weather_overview h2 span{
+    font-size: 20px;
+} */
+
+
+#header .details{
+    width: 30%;
+    position: relative;
+    margin-left: 70%;
+    background: rgba(0, 0, 0, 0.5);
+    /* min-height: 100%;
+    height: 100%; */
+    /* overflow: hidden; */
+    display: inline-block;
+    backdrop-filter: blur(5px);
+}
+
+/* .background{
+    width: 100%;
+    /* background: #575A5E; */
+    /* background: rgba(202, 95, 95, 0.9); */
+    /* opacity: .5; */
+    /* height: auto; */
+
+
+.search_bar{
+    /* position: absolute;
+    top: 0;
+    left: 0;*/
+    /* position: absolute;
+    top: 8px;
+    left: 16px; */
+    margin: 40px 0 10px 20px;
+}   
+
+.search_bar input{
+    padding: 10px 30px 10px 5px;
+    width: 100px;
+    margin-bottom: 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.search_bar input[type=text]:focus {
+    width: 60%;
+  }
+.search_bar button{
+    padding: 10px 25px;
+    background: #333;
+    border: 2px solid#333;
+    color: #fff;
+}
+
+.details .weather_details{
+    width: 100%;
+    height: 100vh;
+    /* position: absolute;
+    top: 50px; */
+}
+
+.details .weather_details h3{
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.details .weather_details table{
+    padding: 0 20px;
+    width: 100%;
+}
+
+.details .weather_details .table_1 tr td{
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+}
+
+.details .weather_details .table_1 tr td i{
+    font-size: 35px;
+}
+
+.details .weather_details .table_1 tr td span{
+    padding: 0px 10px 10px 10px;
+    width: 50px;
+}
+.details .weather_details .table_1 tr td:nth-child(1){
+    padding: 20px 0 20px 20px;
+    
+}
+
+.details .weather_details .table_1 tr td:nth-child(2){
+    padding: 20px 20px 20px 0px;
+    
+}
+
+.details .weather_details .table_2 tr td{
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+}
+.details .weather_details .table_2 tr td:nth-child(2){
+    text-align: right;
+}
+
+
+#heading{
+    display: inline;
+    padding: 20px;
+    margin: 0;
+}
+
+.description{
+    display: flex;
+    /* height: 60px; */
+}
+
+.description img{
+    padding-left: 20px;
+}
+#color{
+    color: lightseagreen;
+}
+@media only screen and (max-width: 900px) {
+    /* body{
+        background: lightcoral;
+    } */
+
+    #header .overview{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      position: static;
+      overflow-x: hidden;
+    }
+    #header .details{
+        width: 100%;
+        margin: 0;
+        position: static;
+        overflow-x: hidden;
+    }
+    #header{
+        width: 100%;
+        position: static;
+        display: block;
+        overflow-x: hidden;
+    }
+    .weather_overview{
+        display: block;
+        position: static;
+        bottom: 0;
+        left: 0;
+        /* margin-top: 30px; */
+        padding: 20px;
+        height: 100%;
+    }
+    
+    #header .overview{
+        min-height: 100px;
+    }
+    .details .weather_details .table_1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .details .search_bar{
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, -10%);
+    }
+    .details .weather_details h3{
+        margin-top: 0;
+    }
+    .home{
+        height: 50vh;
+    }
+    .details .weather_details{
+        height: auto;
+    }
+  }
+
+
+

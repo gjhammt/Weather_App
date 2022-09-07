@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    {{!-- <link rel="stylesheet" href="style.css"> --}}
+    <link rel="stylesheet" href="style_new.css">
+    
+    <link rel="icon" href="https://lh3.googleusercontent.com/proxy/Iuh43yKkB5cryTTeDmvkF4kiDY2e7YLjxwS-ki0Phg0ysQ3fq784o6xMds8cYGiQRN5f_uJKTDE4z1gBFZaJPt9fZpzhWN0X6pj0M1ycQGZVKcUZ6XZ7bUAnH6_Ik3UfhBHFOI9m1HkZyZON4A">
+</head>
+<body>
+    <div id="header">
+        <div class="overview">
+            <div class="nav">
+                <h2>Weather<span>Now</span><i class="fas fa-cloud-sun"></i></h2>
+            </div>
+            <div class="home">
+                    <h1>Weather For You</h1>
+                    <h4>Search a location for weather</h4>
+                <div class="search_bar">
+                    <form action="" class="form2">
+                        <input type="text" placeholder="Location" class="input1">
+                        <button>Search</button>
+                    </form>
+                </div>
+            </div>    
+            {{!-- <button id="search_term">Montreal</button> --}}
+            <div class="weather_overview">
+                
+                <h1><span id="message-1"> Weather Will Appear Here</span>
+                {{!-- <span id="color">°C</span> --}}
+                </h1>
+                <div class="time">
+                    <h2 id="message-2"></h2>
+                    <h4 id="time"></h4> 
+                </div>
+            </div>
+        </div>
+        <div class="details">
+                <div class="weather_details">
+                    <h3>Weather Details</h3>
+
+                <div class="description">
+                    <h2 id="heading"></h2>
+                    <img src="" alt="" id="image" width="50px" height="50px">
+                </div>
+
+                    {{!-- <hr> --}}
+                    <table class="table_1">
+                        <tr>
+                            <td><i class="fas fa-cloud"></i></td>
+                            <td>
+                                <span id="cloud"></span> 
+                                {{!-- Precipitation --}}
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-cloud-rain"></i> </td>
+                            <td>
+                                <span id="precipitation"></span> 
+                                {{!-- Precipitation --}}
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-wind"></i></td>
+                            <td>
+                                <span id="wind"></span> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-tint"></i></td>
+                            <td> 
+                                <span id="humidity"></span> 
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-feather"></i></td>
+                            <td>
+                                <span id="feel"></span> 
+                                {{!-- Precipitation --}}
+                            </td>
+                            
+                        </tr>
+                        
+                    </table>
+                    <hr>
+                    
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+    {{!-- <script src="./js/data.js"></script> --}}
+    <script src="https://kit.fontawesome.com/a4963748cf.js" crossorigin="anonymous"></script>
+</body>
+</html>
